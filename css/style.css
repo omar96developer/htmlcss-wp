@@ -6,9 +6,19 @@
   }
   
   header {
-    background-color: #e579e6;
-    height: 90px;
+    border: 1px solid black;
     margin-bottom: 20px;
+  }
+  
+  li {
+      display: inline-block;
+      list-style: none;
+  }
+  a {
+      text-decoration: none;
+      color: #929292;
+      padding: 10px;
+      margin-left: -10px;
   }
   
   footer {
@@ -21,14 +31,33 @@
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid black;
   }
    
   .hero-section {
-      background-color: #e1d67a;
-      height: 400px;
+      background-image: url(../img/banner.jpg);
+      background-size: cover;
+      background-position: center; 
+      height: 500px;
       margin-bottom: 20px;
+      border-radius: 20px;
+      position: relative;
     }
     
+    .hero-title {
+        width: 50%;
+        color: white;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .hero-section::after {
+        width: 1000px;
+        height: 500px;
+        background-color:black;
+    }
+
     .main-container {
         background-color: #0086ff;
         padding-bottom: 20px;
